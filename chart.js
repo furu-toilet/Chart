@@ -6,6 +6,8 @@ function GetData(){
     Promise.all([
         RequestStart('./chart02.php')   //データの取得（リクエスト）
     ]).then( result => {
+            /*   この内部の処理に移行してくれない...   */
+            
             //google.setOnLoadCallback(drawChart);
             console.log("promise success");
             console.log(result);

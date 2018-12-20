@@ -7,6 +7,8 @@ var datalist4;
 
 google.load('visualization', '1', {'packages':['corechart']});
 chartstart();
+setTimeout('google.setOnLoadCallback(drawChart)', 5000);
+
 
 function chartstart(){
     Promise.all([
@@ -14,7 +16,7 @@ function chartstart(){
       ]).then(
       success => {
           datalist1 = success;
-          google.setOnLoadCallback(drawChart);
+          //google.setOnLoadCallback(drawChart);
           //drawChart();
       },
     )

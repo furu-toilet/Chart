@@ -11,7 +11,7 @@
     
     google.setOnLoadCallback(function(){
         console.log("test log");
-        setTimeout('loadchart()', 1*1000);
+        setTimeout('google.setOnLoadCallback(drawChart)', 1*1000);
         //google.setOnLoadCallback(drawChart);
     });
 

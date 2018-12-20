@@ -7,7 +7,7 @@ var datalist4;
 
 google.load('visualization', '1', {'packages':['corechart']});
 chartstart();
-setTimeout('google.setOnLoadCallback(drawChart)', 5000);
+setTimeout('LoadingChart()', 1*1000);
 
 
 function chartstart(){
@@ -40,6 +40,11 @@ function RequestStart(url){
     xhr.send(null);
   });
 }
+
+function LoadingChart(){
+    google.setOnLoadCallback(drawChart);
+}
+
 
 function drawChart(){
     var data1  = google.visualization.arrayToDataTable(JSON.parse(datalist1));      //可視化データのセット

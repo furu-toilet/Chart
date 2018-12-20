@@ -6,8 +6,9 @@
     // グラフを描画する為のコールバック関数を指定
     //google.setOnLoadCallback(drawChart);
 
-    loadchart();
-
+    //loadchart();
+    setTimeout('loadchart()', 1*1000);
+    
     function loadchart(){
         google.setOnLoadCallback(drawChart);
     }

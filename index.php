@@ -12,6 +12,7 @@
     
     
     <div id="chart_div1" style="width: 100%; height: 350px"></div>
+    <div id="chart_div2" style="width: 100%; height: 350px"></div>
     
     </body>
 </html>

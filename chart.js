@@ -7,12 +7,13 @@
     //google.setOnLoadCallback(drawChart);
 
     //loadchart();
-    setTimeout('loadchart()', 1*1000);
+    //setTimeout('loadchart()', 1*1000);
     
-    function loadchart(){
+    google.setOnloadCallback(function(){
         console.log("test log");
+        setTimeout('loadchart()', 1*1000);
         //google.setOnLoadCallback(drawChart);
-    }
+    });
 
 
     // グラフの描画

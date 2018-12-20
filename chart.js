@@ -10,7 +10,8 @@
     setTimeout('loadchart()', 1*1000);
     
     function loadchart(){
-        google.setOnLoadCallback(drawChart);
+        console.log("test log");
+        //google.setOnLoadCallback(drawChart);
     }
 
 
